@@ -86,6 +86,7 @@ label, section > p {
   background-color: #fff;
   color: #333;
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 #report-radio-section > label {
