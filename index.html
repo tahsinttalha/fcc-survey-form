@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL SURVEY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="#"><li>home</li></a>
+          <a href="#"><li>about</li></a>
+          <a href="#"><li>contact</li></a>     
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 id="title">A Personal Survey</h1>
+      <p id="description">This survey is being conducted solely for the purpose of the developement of the website. Your data is safe and secured and we will be disposed of the data after our analysis is completed. Thank your very much for your time and effort.</p>
+      <form id="survey-form">
+        <section id="input-info-section">
+          <label for="name" id="name-label">
+            Name
+          </label>
+          <input type="text" id="name"  placeholder="Type your name (required)" required>
+          <label for="email" id="email-label">
+            Email
+          </label>
+          <input type="email" id="email"  placeholder="Type your email (required)" required>
+          <label for="number" id="number-label">
+            Age
+          </label>
+          <input type="number" id="number" min="15" max="65" placeholder="Type your age (optional)">
+        </section>
+        <section id="pro-info-section">
+          <p>What is your employment status?</p>
+          <select id="dropdown">
+            <option id="default-option" default>Select your Profession Type</option>
+            <option>Student</option>
+            <option>Unemployed</option>
+            <option>Part-time</option>
+            <option>Full-time</option>
+          </select>
+        </section>
+        <section id="report-radio-section">
+          <p>How would your like to recommand this website to your relatives and friends? </p><br>
+          <label for="radio1" >
+          <input name="share?" id="radio1" type="radio" value="Absolutely">
+          Absolutely
+          </label>
+          <label for="radio2" >
+          <input name="share?" id="radio2" type="radio" value="Maybe">
+          Maybe
+          </label>
+          <label for="radio3" > 
+          <input name="share?" id="radio3" type="radio" value="Never">
+          Never
+          </label>
+          </section>
+          <section id="report-check-section">
+          <p>Where do you think we can improve?</p><br>
+          <div>
+          <input value="1" type="checkbox"> The design of the website
+          </div>
+          <div>
+          <input value="2" type="checkbox">
+Navigation system
+          </div>
+          <div>
+          <input value="3" type="checkbox">
+Interface color
+          </div>
+          <textarea placeholder="Or type your own solution"></textarea>
+        </section>
+        <button id="submit" type="submit" value="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>All rights reserved by the author.</p>
+    </footer>
+  </body>
+</html>
